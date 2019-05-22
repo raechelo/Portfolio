@@ -1,0 +1,19 @@
+.Nav {
+  background-color: $gradient2;
+  color: darken($gradient2, 30%);
+  display: flex;
+  justify-content: space-around;
+  font-family: $bodyfont;
+  font-size: 2rem;
+  height: 4rem;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($gradient1, 30%);
+    text-decoration: none;
+  }
+
+  span {
+    color: $gradient1;
+  }
+}

@@ -6,14 +6,20 @@
   font-family: $bodyfont;
   font-size: 2rem;
   height: 4rem;
+  padding: .2rem;
   text-decoration: none;
 
-  &:visited {
-    color: darken($gradient1, 30%);
-    text-decoration: none;
-  }
+  .nav {
+    margin: auto;
+
+    &:visited {
+      color: darken($gradient1, 30%);
+      text-decoration: none;
+    }
+}
 
   span {
     color: $gradient1;
   }
+  
 }

@@ -1,0 +1,22 @@
+.About {
+  display: grid;
+  grid-template-areas: ". . ."
+  ". . ."
+  ". . greet"
+  ". . name"
+  ". . info";
+  grid-template-columns: 2fr 2fr 3fr;
+  grid-template-rows: 1fr 1fr .5fr .5fr 3fr;
+
+  h2 {
+    grid-area: greet;
+  }
+
+  h1 {
+    grid-area: name;
+  }
+
+  p {
+    grid-area: info;
+  }
+}

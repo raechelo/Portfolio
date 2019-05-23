@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
-import Nav from './Nav/Nav';
+import Nav from '../Nav/Nav';
+import About from '../About/about'
 
 function App() {
   return (
   <section>
     <Nav />
+    <About />
   </section>
   );
 }

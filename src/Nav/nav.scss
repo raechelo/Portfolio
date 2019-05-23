@@ -1,0 +1,26 @@
+.Nav {
+  background-color: $gradient2;
+  color: darken($gradient2, 30%);
+  display: grid;
+  grid-template-areas: "skills projects about . . ro";
+  font-family: $bodyfont;
+  font-size: 2rem;
+  height: 4rem;
+  padding: .2rem;
+  text-decoration: none;
+
+  .nav-link {
+    color: hsl(0, 0%, 60%);
+    margin: auto;
+
+    &:visited {
+      color: hsl(0, 0%, 80%);
+      text-decoration: none;
+    }
+}
+
+  span {
+    color: $gradient1;
+  }
+  
+}

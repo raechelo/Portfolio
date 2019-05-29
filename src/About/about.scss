@@ -1,22 +1,42 @@
 .About {
   display: grid;
+  font-family: $fancyfont;
   grid-template-areas: ". . ."
-  ". . ."
-  ". . greet"
+  ". greet ."
   ". . name"
-  ". . info";
-  grid-template-columns: 2fr 2fr 3fr;
-  grid-template-rows: 1fr 1fr .5fr .5fr 3fr;
+  ". . info"
+  ". . info2";
+  grid-template-columns: 1fr .5fr 2fr;
+  grid-template-rows: .5fr .5fr .75fr .5fr .5fr;
+  height: 90vh;;
 
   h2 {
+    color: white;
+    font-size: 8rem;
+    font-weight: 300;
     grid-area: greet;
+    margin: 0;
   }
 
   h1 {
+    font-size: 6rem;
     grid-area: name;
+    letter-spacing: .2rem;
+    margin: auto 0;
   }
 
   p {
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    margin: .2rem;
+    max-width: 35rem;
+  }
+
+  .p-info {
     grid-area: info;
+  }
+
+  .p-info2 {
+    grid-area: info2;
   }
 }

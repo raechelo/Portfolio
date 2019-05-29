@@ -6,7 +6,6 @@ function App() {
   return (
   <section>
     <Nav />
-    <About />
   </section>
   );
 }

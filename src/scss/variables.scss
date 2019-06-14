@@ -2,10 +2,21 @@
 $gradient1: hsla(198, 78%, 57%, 1);
 $gradient2: hsla(274, 56%, 52%, .5);
 
-$gradientBg: linear-gradient(to bottom, #3DB4E7,hsla(274, 56%, 52%, .5));
+$gradientBg: linear-gradient(to bottom, #3DB4E7, hsla(274, 56%, 52%, .5));
 
 // fonts
-$bodyfont: 'Roboto', sans-serif;
-$fancyfont: 'Rubik', sans-serif;
+$fancyfont: 'Frank Ruhl Libre', serif;
+$bodyfont: 'Rubik', sans-serif;
 
 // animations
+
+@keyframes fade-in {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}

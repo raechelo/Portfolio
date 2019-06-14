@@ -1,22 +1,49 @@
 .About {
   display: grid;
-  grid-template-areas: ". . ."
-  ". . ."
-  ". . greet"
-  ". . name"
-  ". . info";
-  grid-template-columns: 2fr 2fr 3fr;
-  grid-template-rows: 1fr 1fr .5fr .5fr 3fr;
+  font-family: $fancyfont;
+  grid-template-areas: ". . greet"
+  "img img name"
+  "img img info"
+  ". . info2";
+  grid-template-columns: 1fr .5fr 1.5fr;
+  grid-template-rows: .1fr .25fr .25fr .25fr;
+  height: 90vh;
+  padding-left: 10px;
 
   h2 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
     grid-area: greet;
+    margin: auto;
   }
 
   h1 {
+    font-size: 6rem;
     grid-area: name;
+    letter-spacing: .2rem;
+    margin: auto;
   }
 
   p {
+    font-size: 1.25rem;
+    letter-spacing: .05rem;
+    margin: .2rem auto;
+    max-width: 35rem;
+  }
+
+  .p-info {
+    margin: auto;
     grid-area: info;
+  }
+
+  .p-info2 {
+    margin: auto;
+    grid-area: info2;
+  }
+
+  img {
+    width: 100%;
+    grid-area: img;
   }
 }

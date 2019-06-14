@@ -1,0 +1,48 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85vh;
+  justify-content: space-around;
+  justify-items: flex-start;
+  overflow: scroll;
+  padding: 1rem;
+}
+
+.ProjectCard {
+  font-family: $bodyfont;
+  text-align: center;
+  margin: 2rem;
+  width: 40%;
+
+  h4 {
+    font-family: $fancyfont;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .stack {
+    display: inline;
+    font-size: .75rem;
+    margin: 0 .2rem;
+  }
+
+  a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  p {
+    width: 100%
+  }
+
+  .project-image {
+    max-width: 80%;
+  }
+
+}

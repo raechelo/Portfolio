@@ -1,26 +1,56 @@
 .Nav {
   background-color: $gradient2;
-  color: darken($gradient2, 30%);
-  display: grid;
-  grid-template-areas: "skills projects about . . ro";
+  display: flex;
   font-family: $bodyfont;
   font-size: 2rem;
+  justify-content: space-around;
   height: 4rem;
   padding: .2rem;
   text-decoration: none;
 
   .nav-link {
-    color: hsl(0, 0%, 60%);
+    color: hsla(0, 0%, 100%, .7);
     margin: auto;
+    text-decoration: none;
 
     &:visited {
-      color: hsl(0, 0%, 80%);
+      color: hsla(0, 0%, 100%, .7);
       text-decoration: none;
     }
-}
 
+    &:hover {
+      color: hsla(0, 0%, 100%, 1);
+      text-decoration: underline;
+
+      span {
+      color: $gradient1;
+      }
+    }
+    
+    .name {
+      grid-area: ro;
+    }
+  }
+  
   span {
-    color: $gradient1;
+    color: lighten($gradient1, 20%);
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid $gradient1;
+    border-radius: 2px;
+    color: white;
+    display: block;
+    font-family: $bodyfont;
+    font-size: 1.2rem;
+    margin: .75rem 3rem;
+    padding: 5px;
+
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
   
 }

@@ -5,8 +5,8 @@
   .logo {
     animation: fade-in 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     margin: auto;
-    min-width: 10rem;
-    max-width: 15rem;
+    min-width: 8rem;
+    max-width: 10rem;
 
     &:nth-child(5) {
       display: block;

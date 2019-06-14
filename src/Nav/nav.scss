@@ -1,9 +1,9 @@
 .Nav {
   background-color: $gradient2;
-  display: grid;
-  grid-template-areas: "skills projects about . . ro";
+  display: flex;
   font-family: $bodyfont;
   font-size: 2rem;
+  justify-content: space-around;
   height: 4rem;
   padding: .2rem;
   text-decoration: none;
@@ -34,6 +34,23 @@
   
   span {
     color: lighten($gradient1, 20%);
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid $gradient1;
+    border-radius: 2px;
+    color: white;
+    display: block;
+    font-family: $bodyfont;
+    font-size: 1.2rem;
+    margin: auto 3rem;
+    padding: 5px;
+
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
   
 }

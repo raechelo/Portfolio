@@ -1,9 +1,12 @@
 import React from 'react'
+import projectData from '../data';
+import ProjectCard from './ProjectCard/ProjectCard';
 
 export default function projects() {
+  let displayCards = projectData.projectData.map(p => <ProjectCard {...p} />)
   return (
-    <div>
-      <h1>projects</h1>
-    </div>
+    <section className="Projects">
+      {displayCards}
+    </section>
   )
 }

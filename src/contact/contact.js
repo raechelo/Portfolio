@@ -1,11 +1,14 @@
 import React from 'react';
-import contactData from '../data';
+import ContactCard from './ContactCard/ContactCard';
+import projectData from '../data';
 
-export default function contact() {
-  // let displayData = contactData.map(c => {})
+const Contact = () => {
+  let displayCards = projectData.contactData.map(c => <ContactCard {...c} />)
   return (
-    <div>
-      <h1>contact</h1>
-    </div>
+    <section className="Contact">
+      {displayCards}
+    </section>
   )
 }
+
+export default Contact;

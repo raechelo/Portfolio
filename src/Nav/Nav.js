@@ -1,9 +1,5 @@
 import React from 'react'
-import { NavLink, Route } from 'react-router-dom';
-import Projects from '../projects/projects';
-import Skills from '../skills/skills';
-import About from '../About/about';
-import Contact from '../contact/contact';
+import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
   return (
@@ -14,12 +10,6 @@ export default function Nav() {
         <NavLink exact to='/contact' className="nav-link" >contact</NavLink>
         <NavLink exact to='/' className="nav-link name" >raechel<span>odom</span></NavLink>
       </nav>
-      <div>
-        <Route exact path="/skills" component={Skills} />
-        <Route exact path="/projects" component={Projects} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/" component={About} />
-      </div>
     </section>
 
   )

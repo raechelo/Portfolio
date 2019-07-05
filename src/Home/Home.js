@@ -5,7 +5,7 @@ import cactistreetart from '../assets/bg_images/cactistreetart.jpeg';
 
 export default function Home() {
   return (
-    <section>
+    <section className="Home">
       <nav>
         <hr className="horiz-line" />
         <h1>raechel odom</h1>

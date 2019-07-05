@@ -19,13 +19,6 @@ class App extends Component {
           <Sticky>
               {({
                 style,
-    
-                // the following are also available but unused in this example
-                isSticky,
-                wasSticky,
-                distanceFromTop,
-                distanceFromBottom,
-                calculatedHeight
               }) => (
                 <nav style={style}>
                   {/* ... */}

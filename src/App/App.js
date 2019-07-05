@@ -1,37 +1,38 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import Projects from '../Projects/Projects';
 import About from '../About/about';
 import Contact from '../Contact/Contact';
-import cactistreetart from '../assets/bg_images/cactistreetart.jpeg';
-import ScrollableAnchor, { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
-import Scrollchor from 'react-scrollchor';
+import Nav from '../Nav/Nav';
+import Home from '../Home/Home';
+import { Sticky, StickyContainer } from 'react-sticky';
 
 class App extends Component {
 
   render() {
-    configureAnchors({ offset: -60, scrollDuration: 200 });
 
     return (
     <section className="App">
-
-      <nav>
-        <hr className="horiz-line" />
-
-        <h1>raechel odom</h1>
-        <h2>front end engineer</h2>
-
-
-          <a><Scrollchor to="#about" className="home-nav-link">about</Scrollchor></a>
-          <a><Scrollchor to="#contact" className="home-nav-link">contact</Scrollchor></a>
-          <a><Scrollchor to="#projects" className="home-nav-link">projects</Scrollchor></a>
-
-
-        <hr className="horiz-line" />
-      </nav>
-
-      <img src={cactistreetart} alt="street art" className="App-bg" />
-
-      <section>
+        <section id={'home'}>
+          <Home />
+        </section>
+        <StickyContainer>
+          <Sticky>
+              {({
+                style,
+    
+                // the following are also available but unused in this example
+                isSticky,
+                wasSticky,
+                distanceFromTop,
+                distanceFromBottom,
+                calculatedHeight
+              }) => (
+                <nav style={style}>
+                  {/* ... */}
+                  <Nav />
+                </nav>
+              )}
+            </Sticky>
         <section id={'about'}>
           <About />
         </section>
@@ -41,7 +42,7 @@ class App extends Component {
         <section id={'projects'}>
           <Projects />
         </section>
-      </section>
+      </StickyContainer>
     </section>
     )
   }

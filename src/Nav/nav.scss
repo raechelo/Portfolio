@@ -1,3 +1,10 @@
 .Nav {
-  color: magenta;
+  height: 2rem;
+  background-color: magenta;
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 }

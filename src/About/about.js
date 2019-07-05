@@ -1,5 +1,6 @@
-import React from 'react'
-import image from '../assets/profilepic.jpg'
+import React from 'react';
+import image from '../assets/profilepic.jpg';
+import Nav from '../Nav/Nav';
 
 export default function about() {
   return (

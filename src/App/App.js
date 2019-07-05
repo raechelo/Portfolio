@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
 import Projects from '../Projects/Projects';
 import About from '../About/about';
 import Contact from '../Contact/Contact';
-import Nav from '../Nav/Nav';
-import cactistreetart from '../assets/bg_images/cactistreetart.jpeg'
+import cactistreetart from '../assets/bg_images/cactistreetart.jpeg';
+import ScrollableAnchor, { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
+import Scrollchor from 'react-scrollchor';
 
 class App extends Component {
 
-  render () {
+  render() {
+    configureAnchors({ offset: -60, scrollDuration: 200 });
+
     return (
     <section className="App">
 
@@ -18,15 +20,11 @@ class App extends Component {
         <h1>raechel odom</h1>
         <h2>front end engineer</h2>
 
-        <NavLink exact to='/contact' >
-          <h3 className="nav-link">contact</h3>
-        </NavLink>
-        <NavLink exact to='/skills' >
-          <h3 className="nav-link">skills</h3>
-        </NavLink>
-        <NavLink exact to='/projects' >
-          <h3 className="nav-link">projects</h3>
-        </NavLink>
+
+          <a><Scrollchor to="#about" className="home-nav-link">about</Scrollchor></a>
+          <a><Scrollchor to="#contact" className="home-nav-link">contact</Scrollchor></a>
+          <a><Scrollchor to="#projects" className="home-nav-link">projects</Scrollchor></a>
+
 
         <hr className="horiz-line" />
       </nav>
@@ -34,9 +32,15 @@ class App extends Component {
       <img src={cactistreetart} alt="street art" className="App-bg" />
 
       <section>
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/projects" component={Projects} />
+        <section id={'about'}>
+          <About />
+        </section>
+        <section id={'contact'}>
+          <Contact />
+        </section>
+        <section id={'projects'}>
+          <Projects />
+        </section>
       </section>
     </section>
     )

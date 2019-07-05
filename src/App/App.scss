@@ -27,22 +27,25 @@
       margin-bottom: 2.5rem;
     }
 
-    h1, h2, h3 {
+    h1, h2, a {
       text-align: center;
       font-weight: 400;
     }
 
     a {
       text-decoration: none;
+      
+      &:hover {
+        color: $horiz-line;
+        font-weight: 900;
+      }
     }
 
-    h3:hover {
-      color: $horiz-line;
-      font-weight: 900;
-    }
 
-    .nav-link {
+    .home-nav-link {
       color: black;
+      display: block;
+      font-family: $fancyfont;
       padding: 15px;
       position: relative;
     

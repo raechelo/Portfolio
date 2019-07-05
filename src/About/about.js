@@ -5,6 +5,7 @@ import Nav from '../Nav/Nav';
 export default function about() {
   return (
     <section className="About">
+      <Nav />
       <h2>hi!</h2>
       <img src={image} />
       <h1>i'm raechel</h1>

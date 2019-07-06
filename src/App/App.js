@@ -1,21 +1,41 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import Nav from '../Nav/Nav';
-import Projects from '../projects/projects';
-import Skills from '../skills/skills';
+import React, { Component, createRef } from 'react';
+import Projects from '../Projects/Projects';
 import About from '../About/about';
-import Contact from '../contact/contact';
+import Contact from '../Contact/Contact';
+import Nav from '../Nav/Nav';
+import Home from '../Home/Home';
+import { Sticky, StickyContainer } from 'react-sticky';
 
 class App extends Component {
 
-  render () {
+  render() {
+
     return (
-    <section>
-      <Nav />
-      <Route exact path="/skills" component={Skills} />
-      <Route exact path="/projects" component={Projects} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/" component={About} />
+    <section className="App">
+        <section id={'home'}>
+          <Home />
+        </section>
+        <StickyContainer>
+          <Sticky>
+              {({
+                style,
+              }) => (
+                <nav style={style}>
+                  {/* ... */}
+                  <Nav />
+                </nav>
+              )}
+            </Sticky>
+        <section id={'about'}>
+          <About />
+        </section>
+        <section id={'contact'}>
+          <Contact />
+        </section>
+        <section id={'projects'}>
+          <Projects />
+        </section>
+      </StickyContainer>
     </section>
     )
   }

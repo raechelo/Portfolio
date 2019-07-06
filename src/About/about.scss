@@ -1,49 +1,64 @@
 .About {
-  display: grid;
-  font-family: $fancyfont;
-  grid-template-areas: ". . greet"
-  "img img name"
-  "img img info"
-  ". . info2";
-  grid-template-columns: 1fr .5fr 1.5fr;
-  grid-template-rows: .1fr .25fr .25fr .25fr;
+  font-family: $bodyfont;
   height: 90vh;
-  padding-left: 10px;
-
-  h2 {
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 300;
-    grid-area: greet;
-    margin: auto;
-  }
+  background-image: linear-gradient(#ffffff52, #ffffff52), url('../assets/bg_images/hand-graffiti.jpeg');
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "greet greet"
+  "info pic"
+  "hobby hobby";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .05fr .65fr .25fr;
+  padding: 4rem;
 
   h1 {
-    font-size: 6rem;
-    grid-area: name;
-    letter-spacing: .2rem;
-    margin: auto;
+    font-family: $fancyfont;
+    font-size: 3rem;
+    grid-area: greet;
+    margin: 0 auto;
   }
-
-  p {
-    font-size: 1.25rem;
-    letter-spacing: .05rem;
-    margin: .2rem auto;
-    max-width: 35rem;
-  }
-
-  .p-info {
-    margin: auto;
-    grid-area: info;
-  }
-
-  .p-info2 {
-    margin: auto;
-    grid-area: info2;
-  }
-
+  
   img {
-    width: 100%;
-    grid-area: img;
+    height: 400px;
+    grid-area: pic;
+    margin: auto;
+  }
+
+  .about-section {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 1rem;
+  }
+
+  .about-info {
+    color: white;
+    font-size: 1.2rem;
+    grid-area: info;
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+  }
+
+  .about-hobbies {
+    display: flex;
+    justify-content: space-around;
+    grid-area: hobby;
+    margin: auto;
+    width: 80%;
+
+    .interest-name {
+      color: white;
+      font-family: $fancyfont;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: auto;
+      text-align: center;
+    }
+
+    .interest-icon {
+      height: auto;
+      margin: 0;
+      width: 5.5rem;
+    }
+
   }
 }

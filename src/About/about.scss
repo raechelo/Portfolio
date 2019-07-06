@@ -1,7 +1,7 @@
 .About {
   font-family: $bodyfont;
   height: 90vh;
-  background-image: url('../assets/bg_images/hand-graffiti.jpeg');
+  background-image: linear-gradient(#ffffff52, #ffffff52), url('../assets/bg_images/hand-graffiti.jpeg');
   background-size: cover;
   display: grid;
   grid-template-areas: "greet greet"
@@ -25,11 +25,12 @@
   }
 
   .about-section {
-    background-color: hsla(297, 100%, 100%, 0.35);
+    background-color: rgba(0, 0, 0, 0.65);
     padding: 1rem;
   }
 
   .about-info {
+    color: white;
     font-size: 1.2rem;
     grid-area: info;
     margin: auto;
@@ -45,8 +46,11 @@
     width: 80%;
 
     .interest-name {
-      margin: auto;
+      color: white;
+      font-family: $fancyfont;
+      font-size: 1.2rem;
       font-weight: 400;
+      margin: auto;
       text-align: center;
     }
 

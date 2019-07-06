@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../assets/profilepic.jpg';
-import hiker from '../assets/interests/adventurer.svg';
+import hiker from '../assets/interests/backpacker-hiking.svg';
 import books from '../assets/interests/books-stack-of-three.svg';
 import cupcake from '../assets/interests/cupcake.svg';
 import hockey from '../assets/interests/hockey-stick.svg';

@@ -28,7 +28,7 @@ export default function Contact() {
         {displayData}
       </section>
       <form className="download-form" method="get" action={resume}>
-        <button className="download-btn hvr-sweep-to-right" type="submit">Download my resume!</button>
+        <button className="download-btn hvr-sweep-to-right" type="submit">Download my resume! <i class="fas fa-file-download"></i></button>
       </form>
       <section className="skills">
         <h2>skills</h2>

@@ -1,5 +1,16 @@
 .Contact {
-  background-image: url('../assets/bg_images/womensface.jpeg');
+  background-image: linear-gradient(#ffffff52, #ffffff52), url('../assets/bg_images/womensface.jpeg');
   background-size: cover;
   height: 100vh;
+  padding: 4rem;
+
+  h2 {
+    font-family: $fancyfont;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact-me-section {
+    background-color: hsla(198, 20%, 36%, .6);
+  }
 }

@@ -1,28 +1,29 @@
+import github from './assets/contact_logos/github.svg';
+import gmail from './assets/contact_logos/gmail.svg';
+import linkedin from './assets/contact_logos/linkedin.svg';
+import medium from './assets/contact_logos/medium-size.svg';
+
+
 const contactData = [
   {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/raechelo/',
-    img: 'https://image.flaticon.com/icons/svg/34/34227.svg',
+    img: linkedin,
   },
   {
     name: 'GitHub',
     link: 'https://github.com/raechelo',
-    img: 'https://cdn.freebiesupply.com/logos/large/2x/github-octocat-logo-black-and-white.png',
-  },
-  {
-    name: 'Codewars',
-    link: 'https://www.codewars.com/users/raechelo',
-    img: 'https://cdn0.iconfinder.com/data/icons/a-s-social-set/256/codewars-512.png',
+    img: github,
   },
   {
     name: 'Gmail',
     link: 'mailto:odom.raechel@gmail.com',
-    img: 'http://cdn.onlinewebfonts.com/svg/img_165208.png',
+    img: gmail,
   },
   {
     name: 'Medium',
     link: 'https://medium.com/@odom.raechel',
-    img: 'https://cdn.worldvectorlogo.com/logos/medium-1.svg'
+    img: medium
   }
 ]
 

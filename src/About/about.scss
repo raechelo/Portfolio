@@ -1,7 +1,60 @@
 .About {
-  height: 100vh;
+  font-family: $bodyfont;
+  height: 90vh;
+  background-image: url('../assets/bg_images/hand-graffiti.jpeg');
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "greet greet"
+  "info pic"
+  "hobby hobby";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: .05fr .65fr .25fr;
+  padding: 4rem;
+
+  h1 {
+    font-family: $fancyfont;
+    font-size: 3rem;
+    grid-area: greet;
+    margin: 0 auto;
+  }
   
   img {
     height: 400px;
+    grid-area: pic;
+    margin: auto;
+  }
+
+  .about-section {
+    background-color: hsla(297, 100%, 100%, 0.35);
+    padding: 1rem;
+  }
+
+  .about-info {
+    font-size: 1.2rem;
+    grid-area: info;
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+  }
+
+  .about-hobbies {
+    display: flex;
+    justify-content: space-around;
+    grid-area: hobby;
+    margin: auto;
+    width: 80%;
+
+    .interest-name {
+      margin: auto;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .interest-icon {
+      height: auto;
+      margin: 0;
+      width: 5.5rem;
+    }
+
   }
 }

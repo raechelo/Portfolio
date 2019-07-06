@@ -10,7 +10,7 @@
     margin-top: .5rem;
     text-decoration: none;
     &:hover {
-      color: turquoise;
+      color: $nav-hover;
     }
   }
 
@@ -31,7 +31,7 @@
       height: 2px;
       left: 0;
       position: absolute;
-      background: turquoise;
+      background: $nav-hover;
       transition: width 1s ease 0s, right 0.5s ease 0s;
       width: 0;
     }

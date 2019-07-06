@@ -1,3 +1,13 @@
 .Projects {
   background-image: url('../assets/bg_images/abstract-art.jpeg');
+  background-size: cover;
+  height: 100vh;
+  padding: 4rem;
+
+  h2 {
+    font-family: $fancyfont;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

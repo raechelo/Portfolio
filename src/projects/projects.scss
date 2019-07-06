@@ -1,7 +1,7 @@
 .Projects {
   background-image: url('../assets/bg_images/abstract-art.jpeg');
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   padding: 4rem;
 
   .Slider-wrapper {
@@ -23,7 +23,7 @@
   h2 {
     font-family: $fancyfont;
     font-size: 2rem;
-    margin: 0 auto;
+    margin: 2rem auto;
     text-align: center;
   }
 
@@ -113,9 +113,9 @@
       position: relative;
 
     &:hover {
-      background-color: black;
       border: 2px solid white;
       color: white;
+      cursor: pointer;
     }
 
       a {
@@ -133,7 +133,7 @@
         color: white;
         font-family: $fancyfont;
         font-size: 3.5rem;
-        margin-top: 25%;
+        margin-top: 20%;
         position: relative;
         z-index: 20;
       }

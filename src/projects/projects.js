@@ -78,7 +78,7 @@ const Projects = () => {
 
   return (
     <section className="Projects">
-      <h2>projects</h2>
+      <h2>let's get down to business!</h2>
       <div className="Slider-wrapper">
         <Slider className="Slider">
         {projectData.map((project, index) => (
@@ -89,8 +89,8 @@ const Projects = () => {
             <section className="inner">
               <h2>{project.name}</h2>
               <p>{project.summary}</p>
-              <a href={project.link}><button>View Repo <i class="fab fa-github-alt"></i></button></a>
-              <a href='#'><button>Demo Here</button></a>
+              <a href={project.link}><button className="hvr-sweep-to-right-slider"><i class="fab fa-github-alt"></i> View Repo</button></a>
+              <a href='#'><button className="hvr-sweep-to-right-slider">Demo Here <i class="fas fa-desktop"></i></button></a>
             </section>
             <section className="skills-slider">
             <p>

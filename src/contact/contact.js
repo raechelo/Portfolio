@@ -15,11 +15,11 @@ import css from '../assets/logos/css.png';
 
 
 export default function Contact() {
-  const displayData = projectData.contactData.map(c => (<article><a href={c.link}><img src={c.img} /></a></article>))
+  const displayData = projectData.contactData.map((c, i) => (<article index={i}><a href={c.link}><img src={c.img} alt={`find me on ${c.name}`} /></a></article>))
 
   const logos = [js, react, redux, jest, enzyme, nodejs, scss, css, html, mocha, chai];
 
-  const displaySkills = logos.map(l => <img className="logo" src={l} />)
+  const displaySkills = logos.map((l, i) => <img className="logo" src={l} alt={`${l}`} index={i} />)
 
   return (
     <section className='Contact'>
@@ -28,7 +28,7 @@ export default function Contact() {
         {displayData}
       </section>
       <form className="download-form" method="get" action={resume}>
-        <button className="download-btn hvr-sweep-to-right" type="submit">Download my resume!</button>
+        <button className="download-btn hvr-sweep-to-right" type="submit">Download my resume! <i className="fas fa-file-download"></i></button>
       </form>
       <section className="skills">
         <h2>skills</h2>

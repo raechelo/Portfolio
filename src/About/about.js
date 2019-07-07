@@ -24,9 +24,9 @@ export default function about() {
       <img src={image} alt="profile pic"/>
       <section className="about-section about-hobbies">
         {
-          interests.map(i => (
-            <article>
-              <img className="interest-icon" src={i.img} /> 
+          interests.map((i, index) => (
+            <article index={index}>
+              <img className="interest-icon" src={i.img} alt={i.hobby} /> 
               <h5 className="interest-name">{i.hobby}</h5>
             </article>)
           )

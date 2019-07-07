@@ -1,13 +1,163 @@
 .Projects {
   background-image: url('../assets/bg_images/abstract-art.jpeg');
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   padding: 4rem;
+
+  .Slider-wrapper {
+    max-width: 1335px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: auto;
+  
+    a {
+    display: inline-block;
+    margin: 5px;
+    }
+  
+   a:first-child {
+    margin-left: 0;
+    }
+  }
 
   h2 {
     font-family: $fancyfont;
     font-size: 2rem;
-    margin: 0 auto;
+    margin: 2rem auto;
     text-align: center;
+  }
+
+  .Slider {
+    font-family: $bodyfont;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+
+    .slide {
+      height: 70vh;
+      background-size: cover !important;
+    }
+
+    .slide::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+      bottom: 0;
+      left: 0;
+    }
+  
+    .previousButton, .nextButton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+      width: 32px;
+      height: 32px;
+      text-indent: -9999px;
+      cursor: pointer;
+      z-index: 25;
+    }
+
+    .previousButton:hover, .nextButton:hover {
+      background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+    }
+    
+    .previousButton {
+      left: 0;
+      -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
+              transform: rotate(180deg) translateY(calc(50% + 0px));
+    }
+  
+    .previousButton:hover {
+      left: -10px;
+    }
+    
+    .nextButton {
+      right: 0;
+    }
+    
+    .nextButton:hover {
+      right: -10px;
+    }
+
+    .inner-slider {
+      padding: 0 70px;
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+    }
+
+    .inner p {
+      color: white;
+      font-family: $fancyfont;
+      margin: 1rem auto;
+      max-width: 50%;
+      position: relative;
+      text-shadow: 2px 2px 2px black;
+    }
+
+    button {
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 2px;
+      box-shadow: 2px 2px 2px #232323;
+      font-family: $fancyfont;
+      font-size: 1rem;
+      min-height: 2.5rem;
+      max-height: 2.5rem;
+      position: relative;
+
+    &:hover {
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+    }
+
+      a {
+      color: black;
+      margin: auto;
+      text-decoration: none;
+    }
+  }
+    
+
+    .inner {
+      text-align: center;
+
+      h2 {
+        color: white;
+        font-family: $fancyfont;
+        font-size: 3.5rem;
+        margin-top: 20%;
+        position: relative;
+        text-shadow: 2px 2px 2px black;
+        z-index: 20;
+      }
+    }
+
+    .slider-gh {
+      margin: auto .5rem;
+      width: 1rem;
+    }
+
+    .skills-slider {
+      color: white;
+      font-family: $fancyfont;
+      font-size: 1.5rem;
+      position: relative;
+      text-align: center;
+
+      .stack-slider {
+        margin: 0 .5rem;
+        width: 2.5rem;
+      }
+    }
   }
 }

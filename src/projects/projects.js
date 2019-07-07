@@ -82,19 +82,19 @@ const Projects = () => {
       <div className="Slider-wrapper">
         <Slider className="Slider">
         {projectData.map((project, index) => (
-          <div style={{ background: `url('${project.imgLink}') no-repeat`, 'background-position': 'center' }}
+          <div style={{ background: `url('${project.imgLink}') no-repeat` }}
               key={index}
               className="slider-bg"
               >
             <section className="inner">
               <h2>{project.name}</h2>
               <p>{project.summary}</p>
-              <a href={project.link}><button className="hvr-sweep-to-right-slider"><i class="fab fa-github-alt"></i> View Repo</button></a>
-              <a href='#'><button className="hvr-sweep-to-right-slider">Demo Here <i class="fas fa-desktop"></i></button></a>
+              <a href={project.link}><button className="hvr-sweep-to-right-slider"><i className="fab fa-github-alt"></i> View Repo</button></a>
+              <a href='www.placeholder.com'><button className="hvr-sweep-to-right-slider">Demo Here <i className="fas fa-desktop"></i></button></a>
             </section>
             <section className="skills-slider">
             <p>
-              {project.stack.map(s => (<img src={s} alt={s} className="stack-slider" />))}
+              {project.stack.map((s, i) => (<img src={s} alt={s} className="stack-slider" index={i} />))}
             </p>
             </section>
           </div>))}

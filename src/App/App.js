@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import Projects from '../Projects/Projects';
 import About from '../About/about';
 import Contact from '../Contact/Contact';

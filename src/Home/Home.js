@@ -10,9 +10,9 @@ export default function Home() {
         <hr className="horiz-line" />
         <h1>raechel odom</h1>
         <h2>front end engineer</h2>
-        <a><Scrollchor to="#about" className="home-nav-link">about</Scrollchor></a>
-        <a><Scrollchor to="#contact" className="home-nav-link">contact</Scrollchor></a>
-        <a><Scrollchor to="#projects" className="home-nav-link">projects</Scrollchor></a>
+        <Scrollchor to="#about" className="home-nav-link">about</Scrollchor>
+        <Scrollchor to="#contact" className="home-nav-link">contact</Scrollchor>
+        <Scrollchor to="#projects" className="home-nav-link">projects</Scrollchor>
         <hr className="horiz-line" />
       </nav>
       <img src={cactistreetart} alt="street art" className="Home-bg" />

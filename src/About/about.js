@@ -18,7 +18,7 @@ export default function about() {
           I'm Raechel and I'm a passionate front end engineer. I moved to Denver in 2016 but I was born in St. Louis, Missouri. I'm an alumni of the University of Missouri, with a bachelor's in English and a specialization in Creative Writing. After working at a couple publishing companies, I realized my heart was elsewhere, and I've since changed fields to software engineering.
         </p>
         <p>
-          When I'm not coding, I enjoy spending time with my dog, Zeus, getting crafty with sewing garments, or cracking open a fiction book. I'm a nerd for comic books and mythologies and I love fun facts. Fun fact: a group of giraffes is called a tower!
+          When I'm not coding, I enjoy spending time with my dog, Zeus and my fiance, Jake, getting crafty with sewing garments, or cracking open a fiction book. I'm a nerd for comic books and mythologies and I love fun facts. Fun fact: a group of giraffes is called a tower!
         </p>
       </section>
       <img src={image} alt="profile pic"/>

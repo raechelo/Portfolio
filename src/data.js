@@ -6,13 +6,13 @@ import chai from './assets/logos/chai.png';
 import enzyme from './assets/logos/enzyme.png';
 import html from './assets/logos/html.png';
 import jest from './assets/logos/jest.png';
-import js from './assets/logos/js.svg';
+import js from './assets/logos/js.png';
 import mocha from './assets/logos/mocha.png';
-import react from './assets/logos/react.png';
-import nodejs from './assets/logos/nodejs.png';
-import redux from './assets/logos/redux.png';
+import react from './assets/logos/react.svg';
+import nodejs from './assets/logos/nodejs.svg';
+import redux from './assets/logos/redux.svg';
 import scss from './assets/logos/scss.png';
-import css from './assets/logos/css.png';
+import css from './assets/logos/css.svg';
 import jquery from './assets/logos/jquery.png';
 
 

@@ -1,23 +1,20 @@
 import React from 'react';
 import projectData from '../data';
 import resume from '../assets/resume.pdf';
-import chai from '../assets/logos/chai.png';
-import enzyme from '../assets/logos/enzyme.png';
 import html from '../assets/logos/html.png';
-import jest from '../assets/logos/jest.png';
-import js from '../assets/logos/js.svg';
-import mocha from '../assets/logos/mocha.png';
-import react from '../assets/logos/react.png';
-import nodejs from '../assets/logos/nodejs.png';
-import redux from '../assets/logos/redux.png';
+import js from '../assets/logos/js.png';
+import react from '../assets/logos/react.svg';
+import redux from '../assets/logos/redux.svg';
+import nodejs from '../assets/logos/nodejs.svg';
 import scss from '../assets/logos/scss.png';
-import css from '../assets/logos/css.png';
+import css from '../assets/logos/css.svg';
+import enzyme from '../assets/logos/enzyme.png';
 
 
 export default function Contact() {
   const displayData = projectData.contactData.map((c, i) => (<article index={i}><a href={c.link}><img src={c.img} alt={`find me on ${c.name}`} /></a></article>))
 
-  const logos = [js, react, redux, jest, enzyme, nodejs, scss, css, html, mocha, chai];
+  const logos = [js, css, html, react, redux, nodejs, scss, enzyme];
 
   const displaySkills = logos.map((l, i) => <img className="logo" src={l} alt={`${l}`} index={i} />)
 

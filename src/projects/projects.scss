@@ -44,8 +44,8 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(56, 56, 56, 0.9)));
+      background: linear-gradient(transparent, rgba(56, 56, 56, 0.9));
       bottom: 0;
       left: 0;
     }
@@ -55,7 +55,7 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 10;
-      background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+      background: url('https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png') no-repeat center center / 16px;
       width: 32px;
       height: 32px;
       text-indent: -9999px;
@@ -64,7 +64,7 @@
     }
 
     .previousButton:hover, .nextButton:hover {
-      background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+      background: url('https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png') no-repeat center center / 16px;
     }
     
     .previousButton {
@@ -135,7 +135,8 @@
         color: white;
         font-family: $fancyfont;
         font-size: 3.5rem;
-        margin-top: 20%;
+        margin-top: 15%;
+        margin-bottom: .5rem;
         position: relative;
         text-shadow: 2px 2px 2px black;
         z-index: 20;
@@ -157,6 +158,10 @@
       .stack-slider {
         margin: 0 .5rem;
         width: 2.5rem;
+      }
+
+      p {
+        margin: .5rem auto;
       }
     }
   }

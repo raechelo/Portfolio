@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 90vh;
-  padding: 4rem;
+  padding: 2rem;
 
   h2 {
     font-family: $fancyfont;
@@ -21,7 +21,11 @@
 
     img {
       display: block;
-      width: 8rem;
+      width: 6rem;
+
+      &:hover {
+        transform: scale(1.2)
+      }
     }
   }
 
@@ -90,6 +94,7 @@
     box-shadow: 1px 2px 3px #484747;
     display: flex;
     justify-content: space-around;
+    padding: 5px;
     
     .logo {
       width: 6rem;
